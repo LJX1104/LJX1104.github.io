@@ -1,0 +1,728 @@
+/* 页脚与头图透明begin */
+#footer {
+    position: relative;
+    background-color: transparent;
+    background-attachment: scroll;
+    background-position: inherit;
+    /* background-size: cover; */
+}
+
+#page-header {
+    background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#footer::before {
+    background: transparent !important;
+}
+
+#page-header::before {
+    background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #footer::before {
+    background: transparent !important;
+}
+
+[data-theme="dark"] #page-header::before {
+    background: transparent !important;
+}
+
+/* end */
+
+/* 页脚图片不重复只显示一次 */
+/* 图片居中方法：利用“margin:0 auto”实现水平居中；2、利用“text-align:center”实现水平居中； */
+footer#footer {
+    background-repeat: no-repeat;
+}
+
+/* 页脚备案美化begin */
+.github-badge {
+    /* display: inline-block; */
+    border-radius: 4px;
+    text-shadow: none;
+    font-size: 12px;
+    color: #fff;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.github-badge .badge-subject {
+    display: inline-block;
+    background-color: #998281;
+    padding: 4px 4px 4px 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.github-badge .badge-value {
+    display: inline-block;
+    padding: 4px 4px 4px 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.github-badge .bg-green {
+    background: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+}
+
+/*099 Strong Stick*/
+.github-badge .bg-purple {
+    background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+/* end */
+/* 页脚爱心跳动图标样式【bug：display:unset;会导致不会跳，所以加了另一个display去覆盖】 */
+#heartbeat {
+    color: red;
+    animation: iconAnimate 1.33s ease-in-out infinite;
+    display: inline-block !important;
+}
+/*页脚爱心begin*/
+#heartbeat {
+    color: red;
+    animation: iconAnimate 1.33s ease-in-out infinite
+}
+
+@-moz-keyframes iconAnimate {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@-webkit-keyframes iconAnimate {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@-o-keyframes iconAnimate {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes iconAnimate {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+/* end */
+
+/* 页脚爱心跳动图标样式【bug：display:unset;会导致不会跳，所以加了另一个display去覆盖】 */
+#heartbeat {
+    color: red;
+    animation: iconAnimate 1.33s ease-in-out infinite;
+    display: inline-block !important;
+}
+
+/*页脚爱心begin*/
+#heartbeat {
+    color: red;
+    animation: iconAnimate 1.33s ease-in-out infinite
+}
+
+@-moz-keyframes iconAnimate {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@-webkit-keyframes iconAnimate {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@-o-keyframes iconAnimate {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes iconAnimate {
+
+    0%,
+    100% {
+        transform: scale(1)
+    }
+
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+/* end */
+
+  /* 双兰 */
+  /* 翻页按钮居中 */
+#pagination {
+    width: 100%;
+    margin: auto;
+  }
+/* 重写双栏第一个卡片高度不对称 */
+#recent-posts>.recent-post-item {
+    margin-top: 1.3rem !important;
+    display: inline-block;
+    /* height: auto !important; */
+    width: 49%;
+}  
+
+/* 文章目录蒙版效果样式begin */
+/* 文章目录 */
+#aside-content #card-toc .toc-content {
+    margin: 10px -18px;
+}
+
+#aside-content #card-toc .toc-content .toc-link.active {
+    line-height: 1.2;
+    border-radius: 12px;
+    border-left-color: var(--heo-hovertext);
+    background-color: var(--heo-card-bg);
+    color: var(--heo-lighttext);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+[data-theme=dark].toc .toc-item.active .toc-link .toc-text {
+    color: var(--heo-white);
+}
+
+#aside-content #card-toc .toc-content .toc-item.active .toc-link {
+    opacity: 1;
+    border-radius: 8px;
+}
+
+#aside-content #card-toc .toc-content .toc-link {
+    line-height: 1.2;
+    padding: 8px;
+    border-left: 0px solid transparent;
+    border-radius: 12px;
+    color: var(--heo-secondtext);
+    cursor: default;
+}
+
+#aside-content #card-toc .toc-content .toc-link:not(.active) span {
+    opacity: 0.6;
+    cursor: pointer;
+    filter: blur(1px);
+    transition: 0.3s;
+}
+
+#aside-content #card-toc:hover .toc-content .toc-link:not(.active) span {
+    filter: blur(0px);
+    opacity: 1;
+}
+
+#aside-content #card-toc .toc-content .toc-link:not(.active) span:hover {
+    color: var(--heo-lighttext);
+}
+
+/* end */
+
+/* 重写侧栏网站资讯卡片背景颜色 */
+.card-widget.card-webinfo {
+    background-color: #645c5c61 !important;
+}
+/* 侧边栏个人信息卡片动态渐变色 */
+#aside-content>.card-widget.card-info {
+    background-color: #645c5c61 !important;
+}
+/* 重写分类卡片背景颜色 */
+.card-widget.card-categories {
+    background-color: #645c5c61 !important;
+}
+
+.card-widget.card-announcement {
+    background-color: #645c5c61 !important;
+}
+
+/* 重写鼠标放在侧栏分类时的背景颜色 */
+#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
+    padding: 3px 17px;
+    background-color: #8d8a8bbf;
+    border-radius: 8px;
+}
+
+/* 重写侧栏头像旋转(不要旋转功能)把两个恢复默认 */
+.avatar-img img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: unset !important;
+    -moz-transition: filter 375ms ease-in 0.2s, -moz-transform 0.3s;
+    -o-transition: filter 375ms ease-in 0.2s, -o-transform 0.3s;
+    -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0.3s;
+    transition: unset !important;
+    object-fit: cover;
+    pointer-events: none !important;
+}
+
+/* 重写顶部导航背景 */
+[data-theme='dark'] #page-header.nav-fixed>#nav,
+[data-theme='dark'] #page-header.not-top-img>#nav {
+    background: #524f4fab !important;
+    -webkit-box-shadow: 0 5px 6px -5px rgb(133 133 133 / 0%) !important;
+    box-shadow: 0 5px 6px -5px rgb(133 133 133 / 0%) !important;
+}
+/* 顶部导航栏鼠标放上去长条动画 */
+#nav *::after {
+    background-color: #b7b4ab !important;
+}
+/* 顶部渐变条色加载条begin */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    z-index: 2000;
+    position: fixed;
+    margin: auto;
+    top: 4px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    border-radius: 8px;
+    width: 7rem;
+    background: #eaecf2;
+    border: 1px #e3e8f7;
+    overflow: hidden
+}
+
+.pace-inactive .pace-progress {
+    opacity: 0;
+    transition: .3s ease-in
+}
+
+.pace .pace-progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    max-width: 200px;
+    position: absolute;
+    z-index: 2000;
+    display: block;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    /* linear-gradient(to right, #3494e6, #ec6ead) */
+    background: linear-gradient(to right, #43cea2, #3866ca);
+    animation: gradient 2s ease infinite;
+    background-size: 200%
+}
+
+.pace.pace-inactive {
+    opacity: 0;
+    transition: .3s;
+    top: -8px
+}
+
+/* end */
+
+/* 重写顶部导航背景 */
+[data-theme='dark'] #page-header.nav-fixed>#nav,
+[data-theme='dark'] #page-header.not-top-img>#nav {
+    background: #524f4fab !important;
+    -webkit-box-shadow: 0 5px 6px -5px rgb(133 133 133 / 0%) !important;
+    box-shadow: 0 5px 6px -5px rgb(133 133 133 / 0%) !important;
+}
+/* 一级菜单居中 */
+/* #nav .menus_items {
+    position: absolute !important;
+    width: fit-content !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+} */
+/* 文章页标题居中，需要配置文件disable_top_img: true 才能生效 */
+#page h1.page-title,
+#post>#post-info {
+    text-align: center;
+}
+/* 标题霓虹灯begin */
+/* 日间模式不生效 */
+[data-theme="light"] #post-info {
+    animation: none;
+}
+
+/* 夜间模式生效 */
+[data-theme="dark"] #post-info {
+    animation: light_5px 10s linear infinite;
+}
+
+/* 关键帧描述 */
+@keyframes light_15px {
+    0% {
+        text-shadow: #5636ed 0 0 15px;
+    }
+
+    12.5% {
+        text-shadow: #11ee5e 0 0 15px;
+    }
+
+    25% {
+        text-shadow: #f14747 0 0 15px;
+    }
+
+    37.5% {
+        text-shadow: #f1a247 0 0 15px;
+    }
+
+    50% {
+        text-shadow: #f1ee47 0 0 15px;
+    }
+
+    50% {
+        text-shadow: #b347f1 0 0 15px;
+    }
+
+    62.5% {
+        text-shadow: #002afa 0 0 15px;
+    }
+
+    75% {
+        text-shadow: #ed709b 0 0 15px;
+    }
+
+    87.5% {
+        text-shadow: #39c5bb 0 0 15px;
+    }
+
+    100% {
+        text-shadow: #5636ed 0 0 15px;
+    }
+}
+
+@keyframes light_10px {
+    0% {
+        text-shadow: #5636ed 0 0 10px;
+    }
+
+    12.5% {
+        text-shadow: #11ee5e 0 0 10px;
+    }
+
+    25% {
+        text-shadow: #f14747 0 0 10px;
+    }
+
+    37.5% {
+        text-shadow: #f1a247 0 0 10px;
+    }
+
+    50% {
+        text-shadow: #f1ee47 0 0 10px;
+    }
+
+    50% {
+        text-shadow: #b347f1 0 0 10px;
+    }
+
+    62.5% {
+        text-shadow: #002afa 0 0 10px;
+    }
+
+    75% {
+        text-shadow: #ed709b 0 0 10px;
+    }
+
+    87.5% {
+        text-shadow: #39c5bb 0 0 10px;
+    }
+
+    100% {
+        text-shadow: #5636ed 0 0 10px;
+    }
+}
+
+@keyframes light_5px {
+    0% {
+        text-shadow: #5636ed 0 0 5px;
+    }
+
+    12.5% {
+        text-shadow: #11ee5e 0 0 5px;
+    }
+
+    25% {
+        text-shadow: #f14747 0 0 5px;
+    }
+
+    37.5% {
+        text-shadow: #f1a247 0 0 15px;
+    }
+
+    50% {
+        text-shadow: #f1ee47 0 0 5px;
+    }
+
+    50% {
+        text-shadow: #b347f1 0 0 5px;
+    }
+
+    62.5% {
+        text-shadow: #002afa 0 0 5px;
+    }
+
+    75% {
+        text-shadow: #ed709b 0 0 5px;
+    }
+
+    87.5% {
+        text-shadow: #39c5bb 0 0 5px;
+    }
+
+    100% {
+        text-shadow: #5636ed 0 0 5px;
+    }
+}
+
+/* end */
+/* 个人信息状态 begin*/
+.card-info-avatar .author-status-box {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% - 28px);
+    width: 28px;
+    height: 28px;
+    border: 1px solid #d0d7de;
+    border-radius: 2em;
+    background-color: #f8f8f8f8;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+/* 圆圈背景颜色和圆圈外框颜色 */
+[data-theme="dark"] .card-info-avatar .author-status-box {
+    background-color: #2093a5;
+    border: 1px solid #5c6060;
+}
+
+.card-info-avatar .author-status-box .author-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    padding: 0 5px;
+}
+
+.card-info-avatar .author-status-box:hover {
+    width: 105px;
+}
+
+.card-info-avatar .author-status-box:hover .author-status span {
+    width: 105px;
+    margin-left: 4px;
+}
+
+.card-info-avatar .author-status-box .author-status span {
+    width: 0;
+    font-size: 12px;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.4s;
+}
+
+.card-widget .card-info-avatar {
+    display: inline-block;
+    position: relative;
+}
+
+/* end */
+/* 滚动条样式begin */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 2em;
+    /* background-color: rgba(73, 177, 245, .2); */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255 255 255 / .3);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+    border-radius: 2em
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent
+}
+
+/* end */
+/* 重写页面卡片背景颜色 */
+.cardHover,
+.error404 #error-wrap .error-content,
+.layout>div:first-child:not(.recent-posts),
+#recent-posts>.recent-post-item,
+#aside-content .card-widget,
+.layout>.recent-posts .pagination>*:not(.space) {
+    border-radius: 8px;
+    background: rgb(51 51 51 / 85%);
+    -webkit-box-shadow: var(--card-box-shadow);
+    box-shadow: var(--card-box-shadow);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
