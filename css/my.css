@@ -1000,4 +1000,7 @@ img {
   #article-container code::selection {
     background: var(--heo-main) !important;
   }
-  
+/* 颜色加深 */
+[data-theme='dark'] #article-container code {
+    background: #f15858;
+}
